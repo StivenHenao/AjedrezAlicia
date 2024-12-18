@@ -42,7 +42,7 @@ def get_legal_moves(piece):
     # Get all legal moves for a given piece, formatted as a list of details.
 
     moves = piece.legal_moves(pieces.board.white_board, pieces.board.black_board)
-    return [[piece.type, piece.position, piece.color, move, piece.dimension] for move in moves]
+    return [[piece.piece_type, piece.position, piece.color, move, piece.dimension] for move in moves]
 
 def select_piece(position, pieces_list):
     # Find a piece at the specified position in the given list of pieces.
@@ -189,7 +189,7 @@ while not pieces.end_game():
         if best_move:
             piece, move = best_move
             if move_piece(piece, move):
-                print(f"Machine moved {piece.type} to {move}")
+                print(f"Machine moved {piece.piece_type} to {move}")
 
     current_turn += 1
     white_turn = not white_turn
