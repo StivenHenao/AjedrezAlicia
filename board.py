@@ -45,9 +45,9 @@ class Board:
         # Visually represents a cell on the board. If there's a piece, it shows its symbol with color; otherwise, it displays a dot.
         if cell:
             if cell.color == "White":
-                return f"\033[97m{cell.type[0]}\033[0m"  # White color for white pieces
+                return f"\033[97m{cell.piece_type[0]}\033[0m"  # White color for white pieces
             elif cell.color == "Black":
-                return f"\033[91m{cell.type[0]}\033[0m"  # Red color for black pieces
+                return f"\033[91m{cell.piece_type[0]}\033[0m"  # Red color for black pieces
         return "."  # Empty cell
 
     def add_piece(self, piece, position):
