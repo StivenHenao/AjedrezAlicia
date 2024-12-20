@@ -12,4 +12,6 @@ Este repositorio es ideal para quienes deseen explorar la programación de juego
 
 # Ejecución
 
-Para ejecutar, asegurar de compilar GUI.py
+Para ejecutar, asegurar de compilar GUI.py (Esta no se implementó bien)
+Para ejecutar la consola, compilar app.py (Esta si está bien implementada) 
+:)
